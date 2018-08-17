@@ -1,4 +1,4 @@
-const base = 'http://localhost:3000/lobster'
+const base = 'https://logkeeper.mongodb.org/lobster';
 const initiator = 'https://evergreen.mongodb.com';
 const lineNumber = new RegExp('#L([0-9]+)$');
 
