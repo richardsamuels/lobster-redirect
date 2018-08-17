@@ -7,7 +7,7 @@ function toLobsterType(s) {
     case 'T':
       return 'task';
 
-    case 'A':
+    case 'E':
       return 'agent';
 
     case 'S':
@@ -19,7 +19,7 @@ function toLobsterType(s) {
 }
 
 const taskLog = new RegExp('https?:\/\/evergreen\.mongodb\.com\/task_log_raw\/(.*)\/([0-9]+)');
-const typeRegExp = new RegExp('\\?type=(ALL|T|A|S)');
+const typeRegExp = new RegExp('\\?type=(ALL|T|E|S)');
 
 chrome.webRequest.onBeforeRequest.addListener(
   function(details) {
