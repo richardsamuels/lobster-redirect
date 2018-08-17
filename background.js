@@ -23,7 +23,6 @@ const typeRegExp = new RegExp('\\?type=(ALL|T|E|S)');
 
 chrome.webRequest.onBeforeRequest.addListener(
   function(details) {
-    console.log(details)
     if (details.initiator != null && details.initiator !== initiator) {
       return;
     }
@@ -38,7 +37,6 @@ chrome.webRequest.onBeforeRequest.addListener(
     if (linematches != null && linematches[1].length > 0) {
       url = `${url}#scroll=${linematches[1]}`;
     }
-      console.log(url);
 
     return { redirectUrl: url };
   },
@@ -71,7 +69,6 @@ function testLogMatches(url) {
 
 chrome.webRequest.onBeforeRequest.addListener(
   function(details) {
-    console.log(details)
     if (details.initiator != null && details.initiator !== initiator) {
       return;
     }
