@@ -1,0 +1,14 @@
+{
+  "name": "lobster-redirect",
+  "version": "0.0.2",
+  "description": "Redirect evergreen task and test log links to lobster without interfering with the back links from lobster.",
+  "main": "src/background.js",
+  "repository": "git@github.com:richardsamuels/lobster-redirect.git",
+  "author": "Richard Samuels <richard.samuels@mongodb.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "crx": "^3.2.1",
+    "firefox-xpi": "^2.0.4"
+  }
+}

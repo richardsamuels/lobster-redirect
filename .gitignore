@@ -3,3 +3,4 @@ key.pem
 redirect.zip
 .DS_Store
 *.crx
+node_modules/*

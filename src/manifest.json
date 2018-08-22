@@ -3,10 +3,18 @@
   "description": "Redirect from Evergreen logs to Lobster logs",
   "version": "0.0.2",
   "manifest_version": 2,
-  "background": {"scripts":["background.js"]},
+  "background": {
+    "scripts": ["background.js"]
+  },
   "permissions": [
     "webRequest",
     "webRequestBlocking",
     "*://evergreen.mongodb.com/*"
-  ]
+  ],
+  "applications": {
+    "gecko": {
+      "id": "lobster-redirect@evergreen.mongodb.com",
+      "strict_min_version": "42.0"
+    }
+  }
 }
