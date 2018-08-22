@@ -7,7 +7,6 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "*://evergreen.mongodb.com/*",
-    "*://logkeeper.mongodb.org/*"
+    "*://evergreen.mongodb.com/*"
   ]
 }

@@ -28,15 +28,17 @@ chrome.webRequest.onBeforeRequest.addListener(
     }
     const matches = taskLog.exec(details.url);
     const typeMatch = typeRegExp.exec(details.url);
+    console.log(typeMatch);
     if (matches == null || typeMatch == null) {
       return;
     }
-    let url = `${base}/evergreen/task/${matches[1]}/${matches[2]}/${toLobsterType(matches[1])}`
+    let url = `${base}/evergreen/task/${matches[1]}/${matches[2]}/${toLobsterType(typeMatch[1])}`
 
     const linematches = lineNumber.exec(details.url);
     if (linematches != null && linematches[1].length > 0) {
       url = `${url}#scroll=${linematches[1]}`;
     }
+    console.log(url);
 
     return { redirectUrl: url };
   },
