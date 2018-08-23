@@ -3,4 +3,7 @@ key.pem
 redirect.zip
 .DS_Store
 *.crx
+*.xpi
+web-ext-artifacts/*
 node_modules/*
+src/.web-extension-id

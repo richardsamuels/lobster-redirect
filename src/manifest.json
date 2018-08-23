@@ -1,7 +1,7 @@
 {
   "name": "Evergreen Log Redirect",
   "description": "Redirect from Evergreen logs to Lobster logs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifest_version": 2,
   "background": {
     "scripts": ["background.js"]
@@ -14,6 +14,7 @@
   "applications": {
     "gecko": {
       "id": "lobster-redirect@evergreen.mongodb.com",
+      "update_url": "https://richardsamuels.github.io/lobster-redirect/update.json",
       "strict_min_version": "42.0"
     }
   }
