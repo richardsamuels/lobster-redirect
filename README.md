@@ -5,9 +5,7 @@ with the back links from lobster.
 
 ## Installation
 ### Chrome/Chromium
-Open [chrome://extensions](chrome://extensions) and drag and drop the CRX file from the [releases page](https://github.com/richardsamuels/lobster-redirect/releases)
+Open [chrome://extensions](chrome://extensions), toggle Developer mode enabled (upper right hand corner) and drag and drop the CRX file from the [releases page](https://github.com/richardsamuels/lobster-redirect/releases)
 
 ### Firefox
-Open [about:config](about:config), and search for "xpinstall.signatures.required". Ensure this value is set to false.
-
-Then open [about:Addons](about:Addons) and drag and drop the CRX file from the [releases page](https://github.com/richardsamuels/lobster-redirect/releases)
+Open [about:Addons](about:Addons) and drag and drop the XPI file from the [releases page](https://github.com/richardsamuels/lobster-redirect/releases)
